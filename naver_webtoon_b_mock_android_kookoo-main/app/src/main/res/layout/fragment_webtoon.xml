@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="1440dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <FrameLayout
+                android:id="@+id/highest_framelayout"
+                android:layout_marginTop="7dp"
+                android:layout_width="38dp"
+                android:layout_height="38dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cookie">
+                </ImageView>
+            </FrameLayout>
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/autoViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/webtoon_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:tabGravity="center"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabTextColor="#000000" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/webtoon_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.viewpager.widget.ViewPager>
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">50dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">70dp</dimen>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.softsquared.template"
+    >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".src.main.ApplicationClass"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="NAVER_WEBTOON"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+        <activity android:name=".src.main.MainActivity"
+            tools:ignore="Instantiatable">
+        </activity>
+        <activity android:name=".src.main.LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".src.Fragment_webtoon_contents.Fragment_webtoon_contents"/>
+
+    </application>
+
+</manifest>

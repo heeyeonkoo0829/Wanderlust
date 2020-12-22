@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.main.MainActivity">
+
+    <FrameLayout
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/navigation_view"
+        app:itemIconSize="50dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#ffffff"
+
+        app:labelVisibilityMode="labeled"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/white"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="1"
+        app:menu="@menu/webtoon_navigation_items"
+        tools:ignore="MissingConstraints,PrivateResource" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

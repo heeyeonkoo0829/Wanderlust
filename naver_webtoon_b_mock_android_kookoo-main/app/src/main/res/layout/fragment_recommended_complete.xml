@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".src.Fragment_recommended_complete.Fragment_recommeded_complete">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_height="match_parent"
+            android:text="추천완결">
+        </TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginLeft="240dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/b1"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommended_webtoon_item_recyclerview"
+        android:layout_width="match_parent"
+android:layout_marginTop="200dp"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</FrameLayout>
